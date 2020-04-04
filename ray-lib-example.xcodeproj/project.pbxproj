@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA4403582438006A0027111C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FA4403572438006A0027111C /* main.c */; };
+		FA440360243800D80027111C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA44035F243800D80027111C /* OpenGL.framework */; };
+		FA440362243800E10027111C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA440361243800E10027111C /* CoreVideo.framework */; };
+		FA440364243800EB0027111C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA440363243800EB0027111C /* IOKit.framework */; };
+		FA440366243800F30027111C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA440365243800F20027111C /* Cocoa.framework */; };
+		FA440368243801090027111C /* libraylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA440367243801090027111C /* libraylib.a */; };
+		FA44036D243803270027111C /* helper.c in Sources */ = {isa = PBXBuildFile; fileRef = FA44036C243803270027111C /* helper.c */; };
+		FA440379243809A00027111C /* turret.obj in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA440375243808C50027111C /* turret.obj */; };
+		FA44037A243809A30027111C /* turret_diffuse.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA440377243808CB0027111C /* turret_diffuse.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA440370243807A70027111C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				FA44037A243809A30027111C /* turret_diffuse.png in CopyFiles */,
+				FA440379243809A00027111C /* turret.obj in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FA4403542438006A0027111C /* ray-lib-example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ray-lib-example"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4403572438006A0027111C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FA44035F243800D80027111C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		FA440361243800E10027111C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		FA440363243800EB0027111C /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		FA440365243800F20027111C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FA440367243801090027111C /* libraylib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libraylib.a; path = raylib/src/libraylib.a; sourceTree = "<group>"; };
+		FA440369243802450027111C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA44036B243803270027111C /* helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = helper.h; sourceTree = "<group>"; };
+		FA44036C243803270027111C /* helper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = helper.c; sourceTree = "<group>"; };
+		FA440375243808C50027111C /* turret.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turret.obj; sourceTree = "<group>"; };
+		FA440377243808CB0027111C /* turret_diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turret_diffuse.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA4403512438006A0027111C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA440368243801090027111C /* libraylib.a in Frameworks */,
+				FA440366243800F30027111C /* Cocoa.framework in Frameworks */,
+				FA440364243800EB0027111C /* IOKit.framework in Frameworks */,
+				FA440362243800E10027111C /* CoreVideo.framework in Frameworks */,
+				FA440360243800D80027111C /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA44034B2438006A0027111C = {
+			isa = PBXGroup;
+			children = (
+				FA4403562438006A0027111C /* ray-lib-example */,
+				FA4403552438006A0027111C /* Products */,
+				FA44035E243800D70027111C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA4403552438006A0027111C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA4403542438006A0027111C /* ray-lib-example */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA4403562438006A0027111C /* ray-lib-example */ = {
+			isa = PBXGroup;
+			children = (
+				FA440373243808AA0027111C /* resources */,
+				FA4403572438006A0027111C /* main.c */,
+				FA440369243802450027111C /* Info.plist */,
+				FA44036B243803270027111C /* helper.h */,
+				FA44036C243803270027111C /* helper.c */,
+			);
+			path = "ray-lib-example";
+			sourceTree = "<group>";
+		};
+		FA44035E243800D70027111C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA440367243801090027111C /* libraylib.a */,
+				FA440365243800F20027111C /* Cocoa.framework */,
+				FA440363243800EB0027111C /* IOKit.framework */,
+				FA440361243800E10027111C /* CoreVideo.framework */,
+				FA44035F243800D80027111C /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA440373243808AA0027111C /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA440374243808B20027111C /* models */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		FA440374243808B20027111C /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FA440377243808CB0027111C /* turret_diffuse.png */,
+				FA440375243808C50027111C /* turret.obj */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA4403532438006A0027111C /* ray-lib-example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA44035B2438006A0027111C /* Build configuration list for PBXNativeTarget "ray-lib-example" */;
+			buildPhases = (
+				FA4403502438006A0027111C /* Sources */,
+				FA4403512438006A0027111C /* Frameworks */,
+				FA440370243807A70027111C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ray-lib-example";
+			productName = "ray-lib-example";
+			productReference = FA4403542438006A0027111C /* ray-lib-example */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA44034C2438006A0027111C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Kevin Ladan";
+				TargetAttributes = {
+					FA4403532438006A0027111C = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FA44034F2438006A0027111C /* Build configuration list for PBXProject "ray-lib-example" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA44034B2438006A0027111C;
+			productRefGroup = FA4403552438006A0027111C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA4403532438006A0027111C /* ray-lib-example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA4403502438006A0027111C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4403582438006A0027111C /* main.c in Sources */,
+				FA44036D243803270027111C /* helper.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FA4403592438006A0027111C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FA44035A2438006A0027111C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FA44035C2438006A0027111C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0.0.1;
+				DEVELOPMENT_TEAM = HDJ2HDPZ9T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/raylib/src";
+				INFOPLIST_FILE = "$(SRCROOT)/ray-lib-example/Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/raylib/src",
+				);
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kebbbnnn.ray-lib-example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA44035D2438006A0027111C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0.0.1;
+				DEVELOPMENT_TEAM = HDJ2HDPZ9T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/raylib/src";
+				INFOPLIST_FILE = "$(SRCROOT)/ray-lib-example/Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/raylib/src",
+				);
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kebbbnnn.ray-lib-example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA44034F2438006A0027111C /* Build configuration list for PBXProject "ray-lib-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA4403592438006A0027111C /* Debug */,
+				FA44035A2438006A0027111C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA44035B2438006A0027111C /* Build configuration list for PBXNativeTarget "ray-lib-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA44035C2438006A0027111C /* Debug */,
+				FA44035D2438006A0027111C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA44034C2438006A0027111C /* Project object */;
+}
